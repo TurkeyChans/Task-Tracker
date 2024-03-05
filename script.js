@@ -37,7 +37,7 @@ function render() {
             <td><button onclick="removeTask(this)">Remove</button></td>
         </tr>
     `).join('');
-    console.log(true);
+   
 }
 // Function to initialize the table
 function init() {
@@ -45,3 +45,6 @@ function init() {
     tasks = []; // Reset the tasks array
     render(); // Call the render function
 }
+taskForm.addEventListener('submit', handleSubmission);
+// Call the init function to set up the initial state of the app
+init();
